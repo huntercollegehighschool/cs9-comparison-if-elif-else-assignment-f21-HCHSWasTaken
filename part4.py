@@ -24,3 +24,21 @@ opposite
 '''
 
 #start writing your code below
+def code():
+  #takes input number
+  numa = int(input("Enter a number: "))
+  numb = int(input("Enter another number: "))
+  aminb = int(numa+numb)
+  bmina = int(numb+numa)
+  #checks if number is negative, positive, or 0
+  if (numa < 0) & (numb < 0):
+    print("negative")
+  elif (numa == 0) | (numb == 0):
+    print("zero")
+  elif (numa > 0) & (numb > 0):
+    print("positive")
+  elif (aminb == 0) | (bmina == 0):
+    print("opposite")
+  else:
+    print("no correlation")
+  

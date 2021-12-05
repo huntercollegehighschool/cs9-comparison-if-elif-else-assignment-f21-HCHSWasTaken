@@ -14,14 +14,16 @@ Enter another number: 5
 
 The smallest number is 2
 '''
+def code():
+  number = []
+  for i in range(0, 3):
 
-number = int(input("Enter a number: "))
+    sel = int(input("Input a number: "))
+ 
+    number.append(sel)
+    least = number[0]
+  for i in range(0,3):
+    if (number[i] < least):
+      least = number[i]
+  print("The smallest number is", least)
 
-smallest = number
-
-number = int(input("Enter another number: "))
-
-if number < smallest:
-  smallest = number
-  
-print("The smallest number is ", smallest)
