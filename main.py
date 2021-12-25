@@ -1,20 +1,20 @@
-program = input("Which part(1, 2, 3, 4, or 5)? ")
+import part1
+import part2
+import part3
+import part4
+import part5
 
-while program not in ['1', '2', '3', '4', '5']:
-  print("Enter a valid part of the assignment.")
+program = int()
+
+while program != '':
   program = input("Which part(1, 2, 3, 4, or 5)? ")
-  
-if program == '1':
-  import part1
-  
-elif program == '2':
-  import part2
-  
-elif program == '3':
-  import part3
-  
-elif program == '4':
-  import part4
-  
-elif program == '5':
-  import part5
+  if program == '1':
+    part1.code()  
+  elif program == '2':
+    part2.code()  
+  elif program == '3':
+   part3.code()
+  elif program == '4':
+   part4.code()  
+  elif program == '5':
+    part5.code()
